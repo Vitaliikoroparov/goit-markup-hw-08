@@ -3,10 +3,30 @@
 }
 
 .portfolio-nav {
-  margin-bottom: 50px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 40px;
+    margin-top: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-  display: flex;
-  justify-content: center;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.portfolio-nav-item {
+  @media screen and (min-width: 480px) {
+    margin-top: 15px;
+  }
 }
 
 .portfolio-nav-item:not(:last-child) {
@@ -27,16 +47,41 @@
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
+
 .projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
 }
+
 .projects-item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 480px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 
   transition-property: box-shadow;
   transition-duration: 250ms;

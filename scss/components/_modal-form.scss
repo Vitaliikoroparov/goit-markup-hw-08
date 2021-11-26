@@ -104,6 +104,12 @@
   margin-top: 20px;
 
   cursor: pointer;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
 }
 
 .modal-checkbox {

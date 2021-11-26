@@ -11,6 +11,10 @@
   left: 50%;
   transform: translate(-50%, -50%) rotate(0deg);
   transition: transform 250ms;
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+  }
 }
 .modal-btn {
   position: absolute;

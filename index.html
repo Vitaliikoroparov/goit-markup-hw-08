@@ -32,14 +32,61 @@
           </ul>
         </nav>
         <ul class="auth-nav">
-          <li class="menu-item"><a href="" class="link contact-link"><svg class="header-icon" width="16" height="12">
+          <li class="auth-nav-item"><a href="" class="link contact-link"><svg class="header-icon" width="16" height="12">
                     <use href="./images/symbol-defs.svg#icon-envelope"></use>
                   </svg>info@devstudio.com</a></li>
-          <li class="menu-item"><a href="" class="link contact-link"><svg class="header-icon" width="10" height="16">
+          <li class="auth-nav-item"><a href="" class="link contact-link"><svg class="header-icon" width="10" height="16">
                     <use href="./images/symbol-defs.svg#icon-tel"></use>
                   </svg>+38 096 111 11 11</a></li>
         </ul>
+        <button type="button" class="menu-open" ><svg class="" width="40" height="40" data-mob-open>
+                    <use href="./images/symbol-defs.svg#icon-mob-menu"></use>
+                  </svg></button>
       </div>
+      <div class="mob-menu is-hidden" data-mob>
+            <div class="container">
+                <button type="button" class="menu-close" data-mob-close>
+                    <svg class="" width="40" height="40">
+                        <use href="./images/symbol-defs.svg#icon-mob-close"></use>
+                    </svg>
+                </button>
+                <ul class="mob-menu-list list">
+                    <li class="mob-menu-item">
+                        <a href="/" class="mob-menu-link">Студия</a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a href="./portfolio.html" class="mob-menu-link">Портфолио</a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a href="" class="mob-menu-link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="mob-menu-bottom">
+                    <ul class="mob-contacts-list list">
+                        <li class="mob-contacts-item">
+                            <a href="tel:+380961111111" class="mob-contacts-link mob-contacts-link-big">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mob-contacts-item">
+                            <a href="mailto:info@devstudio.com" class="mob-contacts-link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mob-social-list list">
+                        <li class="mob-social-item">
+                            <a href="" class="mob-social-link" aria-label="Instagram">Instagram</a>
+                        </li>
+                        <li class="mob-social-item">
+                            <a href="" class="mob-social-link" aria-label="Twitter">Twitter</a>
+                        </li>
+                        <li class="mob-social-item">
+                            <a href="" class="mob-social-link" aria-label="Facebook">Facebook</a>
+                        </li>
+                        <li class="mob-social-item">
+                            <a href="" class="mob-social-link" aria-label="LinkedIn">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
       <section class="hero">
@@ -106,7 +153,7 @@
         </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section section-work">
         <div class="container">
         <h2 class="section-title work-title ">Чем мы занимаемся</h2>
         <ul class="work-list">
@@ -367,6 +414,7 @@
     </main>
     <footer class="footer">
       <div class="container footer-container">
+        <div class="contact-social">
         <div class="footer-contact">
       <a href="" class="logo footer-logo">Web<span class="accent">Studio</span> </a>
       <address class="address">
@@ -407,6 +455,7 @@
                 </a>
               </li>
             </ul>
+      </div>
       </div>
       <div class="footer-subscribe">
         <p class="footer-subscribe-title">Подпишитесь на рассылку</p>
@@ -470,5 +519,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

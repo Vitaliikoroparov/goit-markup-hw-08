@@ -1,33 +1,72 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-
   background-color: var(--footer-beckgeround);
+
+  @media screen and (min-width: 480px) {
+  }
 }
+
 .footer-container {
-  display: flex;
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
+
 .footer-social {
-  margin-left: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
+
 .footer .accent {
   color: var(--header-beckground);
 }
 
-.footer-logo {
-  display: block;
-  margin-bottom: 20px;
+.footer-contact {
+  @media screen and (min-width: 480px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
 }
+.footer-logo {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
 .address {
   color: var(--header-beckground);
   font-style: normal;
+  @media screen and (min-width: 480px) {
+  }
 }
+
 .address-text {
-  margin-bottom: 9px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .address .link {
-  display: block;
   color: var(--footer-rgba);
   text-decoration: none;
 
@@ -39,24 +78,55 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
+
 .address-link:not(:last-child) {
-  margin-bottom: 9px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-title {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: #ffffff;
-  margin-bottom: 20px;
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+  }
 }
+
 .footer-social {
-  margin-top: 12px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .social-item {
@@ -98,9 +168,24 @@
   }
 }
 
+.contact-social {
+  @media screen and (min-width: 768px) {
+    justify-content: space-evenly;
+    display: flex;
+  }
+}
+
 .footer-subscribe {
-  margin-left: 93px;
-  margin-top: 12px;
+  @media screen and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    margin-top: 12px;
+  }
 }
 
 .footer-subscribe-title {
@@ -113,10 +198,16 @@
   color: var(--header-beckground);
 
   margin-bottom: 20px;
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer-subscribe-form {
   align-items: center;
+  justify-content: center;
 }
 
 .footer-subscribe-input {
@@ -127,15 +218,29 @@
 
   color: rgba(255, 255, 255, 0.6);
 
-  width: 358px;
-  height: 50px;
-  padding-left: 16px;
-  margin-right: 12px;
-
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: var(--footer-beckgeround);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    margin-right: 12px;
+  }
 }
 
 .footer-subscribe-button {
@@ -154,6 +259,11 @@
   padding: 10px 62px 10px 29px;
 
   position: relative;
+
+  @media screen and (max-width: 1199px) {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .footer-subscribe-icon {
