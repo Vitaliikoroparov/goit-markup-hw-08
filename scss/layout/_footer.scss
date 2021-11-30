@@ -13,6 +13,7 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -55,6 +56,11 @@
 }
 
 .address-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  padding-right: 14px;
+
   @media screen and (min-width: 480px) {
     display: flex;
     justify-content: center;
@@ -208,6 +214,10 @@
 .footer-subscribe-form {
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .footer-subscribe-input {
@@ -240,6 +250,8 @@
     height: 50px;
     padding-left: 16px;
     margin-right: 12px;
+    display: flex;
+    margin-bottom: 0;
   }
 }
 
@@ -263,6 +275,9 @@
   @media screen and (max-width: 1199px) {
     display: block;
     margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1200px) {
   }
 }
 
